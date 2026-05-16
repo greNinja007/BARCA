@@ -1,8 +1,10 @@
 import PlayerCard from './components/PlayerCard.jsx';
 import players from './data/players.js';
-
+import Navbar from "./components/Navbar";
 function App() {
   return (
+    <>
+    <Navbar />
     <div>
       <h1>FC Barcelona Legends</h1>
       {players.map((player) => (
@@ -16,6 +18,7 @@ function App() {
         />
       ))}
     </div>
+    </>
   );
 }
 
